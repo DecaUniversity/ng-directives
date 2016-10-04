@@ -1,0 +1,16 @@
+<div>
+	Name: {{diva.name}}
+	<br>
+	Address:
+	<br>
+	{{diva.address.street}}
+	<br>
+	{{diva.address.city}}
+	<br>
+	{{diva.address.stt}}
+	<ul>
+		<li ng-repeat="friend in diva.friends">
+			{{friend}}
+		</li>
+	</ul>
+</div>

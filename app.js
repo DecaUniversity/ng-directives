@@ -2,12 +2,26 @@
 
 angular.module("app", []);
 
-angular.module("app").controller("MainController", ["$scope", function () {
+angular.module("app").controller("MainController", ["$scope", function ($scope) {
+	
+	$scope.diva = {
+		name: "Shakira",
+		address: {
+			street: "Sabor Way",
+			city: "Miami",
+			stt: "Florida"
+		},
+		friends: [
+			"Adele", "Beyonce", "Marimar"
+		]
+	}
+	
 	
 }]);
 
 angular.module("app").directive("userInfoCard", function () {
 	return {
-		template: "Hello, User!"
+		templateUrl: "userInfoCard.html",
+		restrict: "E"
 	}
 });
