@@ -14,17 +14,18 @@ angular.module("app").controller("MainController", ["$scope", function ($scope) 
 		squad: [
 			"Adele", "Beyonce", "Marimar"
 		]
-	}
-	
-	$scope.queenMe = function (queenToBe) {
-		queenToBe.rank = "Queen"
-	}
+	};
 	
 }]);
 
 angular.module("app").directive("userInfoCard", function () {
 	return {
 		templateUrl: "userInfoCard.html",
-		restrict: "E"
+		restrict: "E",
+		controller: function ($scope) {
+			$scope.queenMe = function (queenToBe) {
+				queenToBe.rank = "Queen"
+			}
+		}
 	}
 });
