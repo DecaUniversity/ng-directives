@@ -11,11 +11,14 @@ angular.module("app").controller("MainController", ["$scope", function ($scope) 
 			city: "Miami",
 			stt: "Florida"
 		},
-		friends: [
+		squad: [
 			"Adele", "Beyonce", "Marimar"
 		]
 	}
 	
+	$scope.queenMe = function (queenToBe) {
+		queenToBe.rank = "Queen"
+	}
 	
 }]);
 

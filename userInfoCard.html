@@ -1,16 +1,25 @@
-<div>
-	Name: {{diva.name}}
-	<br>
-	Address:
-	<br>
-	{{diva.address.street}}
-	<br>
-	{{diva.address.city}}
-	<br>
-	{{diva.address.stt}}
-	<ul>
-		<li ng-repeat="friend in diva.friends">
-			{{friend}}
-		</li>
-	</ul>
+<div class="panel panel-primary">
+	
+	<div class="panel-heading">
+		{{diva.name}}
+		<span ng-show="diva.rank" class="pull-right">Queen</span>
+	</div>
+	
+	<div class="panel-body">
+		<h4>Address</h4>
+		{{diva.address.street}}
+		<br>
+		{{diva.address.city}}
+		<br>
+		{{diva.address.stt}}
+		<h4>Friends</h4>
+		<ul>
+			<li ng-repeat="friend in diva.squad">
+				{{friend}}
+			</li>
+		</ul>
+		
+		<button ng-show="!diva.rank" class="btn btn-danger" ng-click="queenMe(diva)">Queen Me</button>
+	
+	</div>
 </div>

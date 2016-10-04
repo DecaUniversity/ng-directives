@@ -1,0 +1,12 @@
+.container {
+	padding-top: 50px;
+}
+
+.panel, .panel-primary, .panel-body, .panel-heading {
+	border-color: deeppink !important;
+}
+
+.panel-primary > .panel-heading {
+	background-image: none;
+	background-color: deeppink !important;
+}
