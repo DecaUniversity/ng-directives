@@ -1,0 +1,22 @@
+{
+  "name": "directives",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "DecaHub"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/DecaUniversity/ng-directives",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "^1.5.8",
+    "bootstrap": "^3.3.7"
+  }
+}

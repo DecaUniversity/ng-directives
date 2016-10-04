@@ -1,0 +1,23 @@
+{
+  "name": "directives",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DecaUniversity/ng-directives.git"
+  },
+  "author": "DecaHub",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DecaUniversity/ng-directives/issues"
+  },
+  "homepage": "https://github.com/DecaUniversity/ng-directives#readme",
+  "devDependencies": {
+    "lite-server": "^2.2.2"
+  }
+}
